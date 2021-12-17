@@ -1,0 +1,60 @@
+/* body tag propertiers. */
+body {
+    background-color: wheat;
+}
+
+/* h1 tag properties */
+h1.heading_1 {
+    padding: 20px;
+    border: 2px solid blue; 
+    border-radius: 50px;
+}
+
+div.parent {
+    display: block;
+    height: 100px;
+    border: 2px solid black;
+}
+
+div.class1 {
+    margin: 20px;
+    border: 5px solid blue; 
+    display: inline-block;
+}
+
+form.signupform {
+    border: 2px solid blue;
+    margin-left: 600px;
+    margin-right: 500px;
+}
+
+form.signupform input {
+    height : 40px; 
+    width: 200px;
+    border-radius: 10px;
+    font-size: medium;
+    margin-right: 50px;
+}
+
+form.signupform h1.formheading{
+    font-weight: bold;
+    text-align: center;
+}
+
+form.signupform div.user_data {
+    margin-top: 10px;
+}
+
+form.signupform div.user_data div.name_data_field{
+    display: inline-block;
+}
+
+form.signupform div.user_data div.username_data_field input {
+    width: 200px;
+    margin-left: 7px;
+}
+
+form.signupform div.user_data div.password_data_field input {
+    width: 200px;
+    margin-left: 12px;
+}
