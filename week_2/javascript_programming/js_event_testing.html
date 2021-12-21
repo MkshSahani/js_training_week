@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>
+            js learning 01
+        </title>
+        <script type="text/javascript">
+            function mouse_over_div() {
+                console.log("Mouse Over"); 
+                alert("Mouse Over"); 
+            }
+            function mouse_over_div_out() {
+                console.log("Mouse Over out");
+                alert("Mouse Out");
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <div onmouseover="mouse_over_div()" onmouseout="mouse_over_div_out()" style="border : 2px solid blue;"> 
+            <p> 
+                This div tag. 
+            </p>
+        </div>
+    </body> 
+</html>
