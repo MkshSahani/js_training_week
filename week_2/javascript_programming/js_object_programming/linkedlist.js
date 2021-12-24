@@ -45,8 +45,34 @@ class LinkedList {
         }
     }
 
+    get_node(node_index) {
+        var counter = 0, current_pointer = this.head;
+        while(current_pointer != null && counter != node_index) {
+            current_pointer = current_pointer.next; 
+            counter++; 
+        } 
+
+        if(current_pointer != null) {
+            return current_pointer; 
+        } else {
+            return null; 
+        }
+    
+    }
+
     remove_node(element) {
-        var current_node = null; 
+        var current_node = this.head, previous_node = this.head;
+        while(current_node != null && current_node.get_data() != element) {
+            previous_node = current_node; 
+            current_node = current_node.next; 
+        } 
+        if(current_node != null) {
+            if(current_node == this.head) {
+                this.head = this.head.next; 
+            } else {
+                previous_node.next = current_node.next; 
+            }
+        }
     }
 }
 
