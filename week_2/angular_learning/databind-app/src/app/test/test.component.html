@@ -1,0 +1,10 @@
+<h1>{{ appName }}</h1>
+<button (click)="showData($event)" value="value_test">Click Here</button>
+<br/> 
+<hr/>
+<input type="text" [(ngModel)]="userName" /> 
+<p [class]="myCSSclass">This paragraph come with myclass property</p> 
+<p [class.blue]="applyCSSclass">This paragraph come with {{ applyCSSclass }} property</p>
+<p [class.blue]="applyBlueClass">This paragraph come with {{ applyCSSclass }} property</p>
+<p [style.color]="testColor">This paragraph should be of brown color </p>
+<h1>Hello {{ userName }} !!</h1>

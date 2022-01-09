@@ -1,0 +1,16 @@
+<div class="container">
+    <form class="form" style="border: 1px solid gray;border-radius : 10px;padding : 20px;margin-top : 100px; width : 700px;">
+        <div class="form-group"> 
+            <label for="username" class="text-capitalize">user name </label> 
+            <input class="form-control" type="text" name="username" (input)="checkUserNameString($event)" [(ngModel)]="username" > 
+        </div>  
+            <button *ngIf="emptystring; else notValid" type="submit"   class="btn btn-primary" name="submit" disabled >Submit</button>
+            <ng-template #notValid> 
+                <button  type="submit" class="btn btn-primary" name="submit" >Submit</button>
+            </ng-template> 
+    </form>
+    username   
+    <p class="h6 text-danger">
+         {{ username }}
+    </p>  
+</div> 
