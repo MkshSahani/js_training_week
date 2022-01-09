@@ -10,6 +10,7 @@ export class TestComponent implements OnInit {
   isLogin: boolean = false; 
   isLogout: boolean = true; 
   list = [1, 2, 3, 4, 5]; 
+  name:string = "Mukesh";
   
   constructor() { }
 

@@ -1,0 +1,9 @@
+<h1> 
+    <span style="color:red;font-size:large"> 
+        I am teacher component; behaving like a parent :)
+    </span> 
+</h1> 
+<app-student *ngFor="let teacher of teachers" 
+    [teacher]="teacher" 
+    [principle]="principle"> 
+</app-student> 

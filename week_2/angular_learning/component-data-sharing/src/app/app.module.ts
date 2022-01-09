@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
-import { ChildComponent } from './child/child.component';
+import { StudentComponent } from './student/student.component';
+import { TeacherComponent } from './teacher/teacher.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    ChildComponent
+    StudentComponent,
+    TeacherComponent
   ],
   imports: [
     BrowserModule
