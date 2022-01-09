@@ -1,0 +1,12 @@
+<app-game-control (odd)="oddNumberEvent($event)" (even)="evenNumberEvent($event)">
+</app-game-control>
+
+<div class="container">
+  <app-even *ngFor="let e of even_number_list" [even]='e'> 
+  </app-even> 
+</div> 
+
+<div class="container"> 
+  <app-odd *ngFor="let o of odd_number_list" [odd]='o'> 
+  </app-odd> 
+</div> 

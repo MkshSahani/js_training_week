@@ -1,0 +1,11 @@
+<h1> 
+    <span style="color:red;"> 
+        I am this parent component using child. 
+    </span> 
+    <p *ngIf="userNameSet">
+        {{ userName }} 
+    </p> 
+
+</h1> 
+<app-login (login)="onLogin($event)"></app-login>
+
